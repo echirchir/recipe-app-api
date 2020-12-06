@@ -4,7 +4,6 @@ from django.urls import reverse
 
 
 class AdminSiteTests(TestCase):
-    
     def setUp(self):
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
