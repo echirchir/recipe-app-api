@@ -10,5 +10,8 @@ RUN mkdir /app
 WORKDIR /app 
 COPY ./app /app 
 
+RUN mkdir -p /vol/web/media
+RUN mkdir -p /vol/web/static
+
 RUN adduser user
 USER user
